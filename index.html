@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+
+    <header class="topo">
+        <a href="#sobre" class="logo">Gustavo</a>
+        <button id="btn-menu" class="btn-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <nav id="menu" class="menu">
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+            
+            <button id="btn-tema" class="btn-tema" aria-label="Alternar tema">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="secao">
+            <h2>Sobre mim</h2>
+            <div class="cartao sobre-conteudo">
+                <img src="2.jpg" alt="Foto de perfil" class="foto"
+                     onerror="this.style.display='none'">
+                <div>
+                    <p>Olá! Meu nome é <strong>Gustavo Marinho Lamounier</strong>. tenho 21 anos e sou de Formosa, Goiás. Hoje estou focado nos estudos.
+                            No tempo livre gosto de jogar videogame e ouvir música, que são as coisas que me ajudam a relaxar e me divertir.
+                            Meu objetivo agora é encontrar um objetivo. Ainda estou descobrindo o que quero pra minha vida, e estou aberto a conhecer novos caminhos.
+                    </p>
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Jogar</li>
+                        <li>Tocar violão</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="secao">
+            <h2>Formação</h2>
+            <div class="cartao">
+                <h3>Ensino superior</h3>
+                <p><strong>Engenharia de Software</strong> UNINTER (6º período)</p>
+
+                <h3>Cursos</h3>
+                <ul>
+                    <li>Python — Curso em Video (40 horas)</li>
+                    <li>Hardware — Curso em Video (20 horas)</li>
+                    <li>SQL - Curso em Video (40 horas)</li>
+                    <li>Git e Github - Curso em Video (20 horas)</li>
+                </ul>
+
+                <h3>Idiomas</h3>
+                <ul>
+                    <li>Português — Nativo</li>
+                    <li>Inglês — Nível (intermediário)</li>
+                </ul>
+            </div>
+        </section>
+
+            <section id="portfolio" class="secao">
+            <h2>Portfólio</h2>
+            <div class="grade">
+                <article class="cartao projeto">
+                    <h3>Projeto de Python</h3>
+                    <p>Algoritmo em python para controle de erros.</p>
+                    <a href="https://github.com/GustavoMLamounier/Estudo-Python.git" target="_blank" rel="noopener">Ver no GitHub</a>
+                </article>
+                <!--<article class="cartao projeto">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição curta do que foi feito e das tecnologias usadas.</p>
+                    <a href="https://github.com/seu-usuario/projeto-2" target="_blank" rel="noopener">Ver no GitHub</a>
+                </article>
+                <article class="cartao projeto">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição curta do que foi feito e das tecnologias usadas.</p>
+                    <a href="https://github.com/seu-usuario/projeto-3" target="_blank" rel="noopener">Ver no GitHub</a>
+                </article>--->
+            </div>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2>Contato</h2>
+            <form id="form-contato" class="cartao" novalidate>
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome">
+                    <small class="erro" id="erro-nome"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                    <small class="erro" id="erro-email"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                    <small class="erro" id="erro-mensagem"></small>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Gustavo M Lamounier. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true" hidden>
+        <div class="modal-caixa">
+            <p>Mensagem enviada com sucesso!</p>
+            <button id="btn-fechar" class="btn-enviar">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
